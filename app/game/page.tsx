@@ -24,7 +24,6 @@ export default async function Game() {
   const guessObject = _.find(words, (o) => o.id === randomNumber)!;
   const word2guess: string = guessObject.word!;
   console.log(new Date());
-  
 
   return (
     <main className={styles.main}>
