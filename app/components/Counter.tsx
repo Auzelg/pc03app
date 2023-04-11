@@ -14,14 +14,7 @@ export default function Counter() {
         setInitialTime(initialTime - 1);
       }, 1000);
     }
-
-    /*
-    if (initialTime === 0 && startTimer) {
-      setStartTimer(false);
-      console.log("done", initialTime, startTimer);
-    }
-    */
   }, [initialTime]);
 
-  return <h2>{initialTime}</h2>;
+  return <h1>{initialTime}</h1>;
 }

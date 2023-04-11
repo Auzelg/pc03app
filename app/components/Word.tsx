@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import styles from "./page.module.css";
 import _ from "lodash";
 
 export default function Word() {
@@ -14,7 +13,7 @@ export default function Word() {
 
   React.useEffect(() => {
     const fetchWords = async () => {
-      const response = await fetch("http://localhost:3000/api/game");
+      const response = await fetch("/api/game");
       const data = await response.json();
       const randomNumber = getRandomNumber();
       // Exclamation Mark (!) - No way this variable will be undefined or null
@@ -26,5 +25,5 @@ export default function Word() {
     fetchWords();
   }, []);
 
-  return <h1>{word}</h1>;
+  return <div style={{ fontSize: "xxx-large" }}>{word}</div>;
 }
