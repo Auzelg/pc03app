@@ -10,7 +10,6 @@ export default function Counter() {
   React.useEffect(() => {
     if (initialTime > 0) {
       setTimeout(() => {
-        console.log("startTime, ", initialTime);
         setInitialTime(initialTime - 1);
       }, 1000);
     }
