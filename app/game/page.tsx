@@ -13,6 +13,10 @@ export default function Game() {
       <div className={styles.center}>
         <Counter />
       </div>
+      <div className={styles.center} style={{ fontSize: "x-small" }}>
+        Copyright © Jojo {new Date().getFullYear()}. In-App Purchase available
+        in FinBar.
+      </div>
     </main>
   );
 }
