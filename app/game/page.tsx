@@ -22,7 +22,7 @@ export default function Game() {
         }}
       >
         <div>Copyright © Jojo {new Date().getFullYear()}.</div>
-        <div>In-App Purchase available at CS FinBar.</div>
+        <div>In-App Purchase at CS FinBar.</div>
       </div>
     </main>
   );
