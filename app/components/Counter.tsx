@@ -4,7 +4,7 @@ import React from "react";
 import styles from "./page.module.css";
 
 export default function Counter() {
-  const [initialTime, setInitialTime] = React.useState(5);
+  const [initialTime, setInitialTime] = React.useState(120);
   const [startTimer, setStartTimer] = React.useState(true);
 
   React.useEffect(() => {

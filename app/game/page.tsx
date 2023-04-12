@@ -16,13 +16,3 @@ export default function Game() {
     </main>
   );
 }
-
-/*
-async function getPosts() {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts`, {
-    cache: "no-store",
-  });
-  const post = await res.json();
-  return post;
-}
-*/

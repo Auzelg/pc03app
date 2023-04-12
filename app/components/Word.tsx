@@ -8,7 +8,7 @@ export default function Word() {
   const [wordId, setWordId] = React.useState(0);
 
   const getRandomNumber = () => {
-    return Math.floor(Math.random() * 10);
+    return Math.floor(Math.random() * 492);
   };
 
   React.useEffect(() => {
