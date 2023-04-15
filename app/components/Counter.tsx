@@ -5,15 +5,18 @@ import styles from "./page.module.css";
 
 export default function Counter(props: { handleCounterClick: Function }) {
   const [initialTime, setInitialTime] = React.useState(120);
-  const [resetTimer, setResetTimer] = React.useState(false);
+  const [resetTimer, setResetTime] = React.useState(false);
 
   const { handleCounterClick } = props;
 
   React.useEffect(() => {
     if (initialTime > 0) {
-      setTimeout(() => {
+      const timeoutId = setTimeout(() => {
         setInitialTime(initialTime - 1);
       }, 1000);
+      return () => {
+        clearTimeout(timeoutId);
+      };
     }
   }, [initialTime]);
 
@@ -21,7 +24,7 @@ export default function Counter(props: { handleCounterClick: Function }) {
     <div
       onClick={() => {
         handleCounterClick();
-        setInitialTime(15);
+        setInitialTime(120);
       }}
       style={{ cursor: "default", fontSize: "x-large" }}
     >
