@@ -3,9 +3,11 @@
 import React from "react";
 import styles from "./page.module.css";
 
-export default function Counter() {
-  const [initialTime, setInitialTime] = React.useState(120);
-  const [startTimer, setStartTimer] = React.useState(true);
+export default function Counter(props: { handleCounterClick: Function }) {
+  const [initialTime, setInitialTime] = React.useState(15);
+  const [resetTimer, setResetTimer] = React.useState(false);
+
+  const { handleCounterClick } = props;
 
   React.useEffect(() => {
     if (initialTime > 0) {
@@ -15,5 +17,15 @@ export default function Counter() {
     }
   }, [initialTime]);
 
-  return <h1>{initialTime}</h1>;
+  return (
+    <div
+      onClick={() => {
+        handleCounterClick();
+        setInitialTime(15);
+      }}
+      style={{ cursor: "default", fontSize: "x-large" }}
+    >
+      {initialTime}
+    </div>
+  );
 }

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import words from "./words.json";
+import data from "./data.json";
 
 export async function GET(request: Request) {
-  return NextResponse.json(words);
+  return NextResponse.json(data);
 }

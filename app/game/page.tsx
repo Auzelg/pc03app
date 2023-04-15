@@ -3,15 +3,13 @@ import _ from "lodash";
 import styles from "./page.module.css";
 import Counter from "../components/Counter";
 import Word from "../components/Word";
+import Game from "../components/Game";
 
-export default function Game() {
+export default async function Genius() {
   return (
     <main className={styles.main}>
-      <div className={styles.center}>
-        <Word />
-      </div>
-      <div className={styles.center}>
-        <Counter />
+      <div>
+        <Game />
       </div>
       <div
         style={{
