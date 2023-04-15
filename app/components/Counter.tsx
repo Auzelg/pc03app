@@ -4,7 +4,7 @@ import React from "react";
 import styles from "./page.module.css";
 
 export default function Counter(props: { handleCounterClick: Function }) {
-  const [initialTime, setInitialTime] = React.useState(15);
+  const [initialTime, setInitialTime] = React.useState(120);
   const [resetTimer, setResetTimer] = React.useState(false);
 
   const { handleCounterClick } = props;
