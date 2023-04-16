@@ -26,7 +26,7 @@ export default function Counter(props: { handleCounterClick: Function }) {
         handleCounterClick();
         setInitialTime(120);
       }}
-      style={{ cursor: "default", fontSize: "x-large" }}
+      style={{ cursor: "pointer", fontSize: "x-large" }}
     >
       {initialTime}
     </div>

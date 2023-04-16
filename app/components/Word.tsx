@@ -1,6 +1,3 @@
-"use client";
-
-import React from "react";
 import _ from "lodash";
 
 export default function Word(props: { data: DataProps[]; dataId: number }) {
