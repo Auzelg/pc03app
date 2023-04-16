@@ -7,7 +7,7 @@ import Counter from "./Counter";
 import styles from "./page.module.css";
 
 const getRandomNumber = () => {
-  return _.random(0, 492);
+  return _.random(0, 509);
 };
 
 export default function Game() {
